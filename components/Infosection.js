@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
 import LogoNeu from '../data/SvgLogoNeu'
-import { PhoneIcon } from '@heroicons/react/solid'
-import { AtSymbolIcon } from '@heroicons/react/solid'
+import { PhoneIcon } from 'heroicons/react/'
+import { AtSymbolIcon } from 'heroicons/react'
 import Modal6 from './Modal6.js'
 
 function Infosection() {
