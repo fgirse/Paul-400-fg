@@ -16,15 +16,20 @@ export default function MyModal6() {
 
   return(
     <>
-      <div className="inset-0 flex-col items-center justify-center">
-        <button
-          type="button"
-          onClick={openModal}
-          className="mx-auto w-max-lg text-2xl font-sans text-center font-extrabold py-9 px-4 lg:text-3xl lg:py-5 text-white bg-orange-600 hover:bg-slate-500 rounded-md bg-opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-        >
-         
-          Reservationen
-        </button>
+      <div className="inset-0 flex flex-col items-center justify-center">
+      <div className=" left-16 mx-auto mt-[130vh] flex flex-col w-full items-center justify-start px-12 md:absolute md:-mt-40 md:w-4/12">
+      <button
+                type="button"
+                className="inline-flex flex-col items-center justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 font-sans text-xl font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-4xl lg:mb-6"
+              >
+                <svg className="w-16 h-16" fill="#ffffff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?Subject=Enquiry">
+                Reservationen</a>
+              </button>
+              <div className=''>
+           
+              </div>
+                 </div>
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>
