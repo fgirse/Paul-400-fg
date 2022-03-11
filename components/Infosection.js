@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import LogoNeu from '../data/SvgLogoNeu'
 import Modal6 from './Modal6.js'
@@ -8,8 +10,8 @@ function Infosection() {
     <>
       <section className="w-screen mx-auto bg-sky-500 h-full lg:flex lg:flex-col md:bg-amber-800 lg:py-2 lg:mx-auto lg:gap-x-5 lg:justify-start lg:w-full lg:items-start xl:flex-row xl:justify-center xl:items-center">
         <div className="mx-auto w-full flex flex-col items-center md:flex-row md:items-stretch md:justify-start md:gap-x-5">
-          <div className=" mt-3 mb-1 flex flex-col items-center justify-center w-96">
-            <LogoNeu width="123" height=""></LogoNeu>
+          <div className="flex flex-col items-center justify-center w-96">
+            <LogoNeu className="mx-auto p-1 w-24 h-12 lg:w-40 lg:h-16"></LogoNeu>
           </div>
 
           <div className="hidden lg:flex lg:flex-row lg:justify-center lg:items-center gap-x-2">
@@ -28,9 +30,10 @@ function Infosection() {
           </div>
         </div>
 
-        <div className="hidden md:block md:mr-10">
+        <div className="hidden lg:block lg:mr-10">
           <div>
-            
+            <button className='lg:h-12 lg:w-36 rounded-2xl lg:text-lg text-slate-100 bg-amber-600 lg:hover:bg-amber-500'><svg className="inline w-10 h-10 px-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"></path></svg>
+            Login</button>
           </div>
         </div>
       </section>

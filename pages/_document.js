@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
-        <body className="bg-slate-800 font-sans text-blue-500 dark:bg-gray-900 dark:text-white w-full mx-auto max-w-screen-2xl">
+        <body className="bg-red-500 font-sans text-blue-500 dark:bg-gray-900 dark:text-white w-screenmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmme                                                                                                                                                                                                                                                  mx-auto max-w-screen-2xl">
           <Main />
           <NextScript />
         </body>

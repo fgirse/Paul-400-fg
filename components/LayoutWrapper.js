@@ -14,8 +14,8 @@ const LayoutWrapper = ({ children }) => {
     <>
       <InfoSection/>
       <SectionContainer>
-        <div className="w-screen h-screen flex flex-col justify-between bg-slate-900">
-          <header className="mt-2 flex items-end justify-between p-2">
+        <div className="w-screen flex flex-col justify-between bg-slate-900">
+          <header className="mt-1 flex items-start justify-between p-1">
             <div>
               <Link href="/" aria-label={siteMetadata.headerTitle}>
                 <div className="flex items-center justify-between">
@@ -23,7 +23,7 @@ const LayoutWrapper = ({ children }) => {
                     <Logo />
                 </div>*/}
                   {typeof siteMetadata.headerTitle === 'string' ? (
-                    <div className="hidden h-6 text-2xl font-semibold ">
+                    <div className="hidden text-xl font-semibold ">
                       {siteMetadata.headerTitle}
                     </div>
                   ) : (

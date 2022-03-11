@@ -14,7 +14,7 @@ export default function event() {
           <p className="mt-16 headingB py-4 text-center text-gray-100 sm:text-6xl md:text-5xl lg:mt-5 lg:text-8xl lg:py-8 ">
             Dein Event
           </p>
-          <div className="mx-auto w-10/12 sm:w-5/12 md:w-2/12  lg:w-4/12 lg:-mt-8 xl:w-3/12">
+          <div className="mx-auto py-2  w-10/12 sm:w-5/12 md:w-2/12  lg:w-4/12 lg:-mt-8 xl:w-3/12">
             <Image
               src="/LogoAlt.png"
               layout="responsive"

@@ -74,7 +74,7 @@ return(
   <section className="hidden lg:block lg:mx-auto lg:mt-2 lg:rounded-3xl lg:w-screen bg-slate-900 lg:h-[14vh] ">
           <div className="grid grid-cols-1 md:grid md:grid-cols-[7fr_6fr]  items-center justify-center">
                 <div className="">
-                        <h1 className=" ml-4 headingB text--600 lg:text-base xl:text-1xl px-4 2xl:text-[3.33rem] font-black">
+                        <h1 className=" ml-4 headingB text--600 lg:text-base xl:text-xl px-4 2xl:text-[3.33rem] font-black">
                           Dein Treffpunkt in Freiburg!</h1>
                 </div>
                 <div className="">
@@ -110,7 +110,7 @@ return(
               </div>
               {/*=============n=================================== Modale6 ende =======================================================================================*/}
 
-              <div className="-gray-700 mx-auto mt-5 bg-gray-700 shadow-lg shadow-yellow-400/50 flex w-11/12 flex-col items-center rounded-2xl border md:bg-red-900 dark:bg-gray-800 md:flex-row lg:w-11/12 ">
+              <div className="-gray-700 mx-auto mt-5 bg-gray-700 shadow-lg shadow-slate-400/50 flex w-11/12 flex-col items-center rounded-2xl border md:bg-red-900 dark:bg-gray-800 md:flex-row lg:w-11/12 ">
                <div className='mt-3 w-40'>
                 <Image className="rounded-3xl" src="/portrait-mick1.png" width="160" height="200" layout="responsive" alt="portrait" />
                 </div> 
@@ -247,12 +247,12 @@ return(
               <p className="text-sm p-2 font-sans text-justify lg:newspaperB lg:mt-0 text-gray-100 px-4 lg:-mb-16 lg:text-3xl lg:leading-10">
                 Gemütlich nordisches Ambiente im Herzen der Altstadt Freiburgs
                 gelegen. Orginales Waterkant-Feeling mit Astra <Astraflasche className="hidden md:inline w-20 h-16"></Astraflasche>, Flens & Co. <FlensDose className="hidden md:inline w-20 h-12"></FlensDose><br/>
-                Jeden Samstag Bundesliga Saison Spieltag des <SCLogo className="inline h-12 w-36"/> Live in unserer <Link href="/sportareNa">
+                Jeden Samstag Bundesliga Saison Spieltag des <SCLogo className="inline h-16 w-40"/> Live in unserer <Link href="/sportareNa">
                   <a className="text-yellow-600 hover:text-amber-300 hover:border-b-4 hover:border-slate-400 text-sm lg:text-4xl">
                     Sportarena.
                   </a>
                 </Link>{" "}
-                <Arena className="inline w-12 h-8"></Arena> Bei
+                <Arena className="inline w-20 h-12"></Arena> Bei
                 Top Spielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser
                 Booking-Tool zu empfehlen !!!
               </p>
