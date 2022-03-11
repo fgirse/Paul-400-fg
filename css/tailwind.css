@@ -28,6 +28,21 @@
     @apply absolute w-full h-[3px] left-0 top-1/2 content-[''] bg-gradient-to-r from-transparent via-slate-100 to-transparent
   }
 }
+/* architects-daughter-regular - latin */
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/architects-daughter-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../public/fonts/architects-daughter-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../public/fonts/architects-daughter-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../public/fonts/architects-daughter-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../public/fonts/architects-daughter-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../public/fonts/architects-daughter-v17-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
+}
+
+
 
 @layer components {
   .headingA {

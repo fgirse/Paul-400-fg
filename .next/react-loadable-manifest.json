@@ -1,8 +1,27 @@
 {
   "..\\components\\ClientReload.js -> socket.io-client": {
-    "id": "..\\components\\ClientReload.js -> socket.io-client",
+    "id": 78765,
     "files": [
-      "static/chunks/node_modules_socket_io-client_build_esm_index_js.js"
+      "static/chunks/764-c427d2c2141616c0.js",
+      "static/chunks/765.0376acd5b7477a34.js"
+    ]
+  },
+  "..\\components\\comments\\index.js -> @/components/comments/Disqus": {
+    "id": 39970,
+    "files": [
+      "static/chunks/970.8babf3f1c5129aa4.js"
+    ]
+  },
+  "..\\components\\comments\\index.js -> @/components/comments/Giscus": {
+    "id": 26013,
+    "files": [
+      "static/chunks/13.b51db586fefef04c.js"
+    ]
+  },
+  "..\\components\\comments\\index.js -> @/components/comments/Utterances": {
+    "id": 80369,
+    "files": [
+      "static/chunks/369.816421b95853ea2a.js"
     ]
   }
 }
