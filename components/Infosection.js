@@ -8,7 +8,7 @@ import Modal6 from './Modal6.js'
 function Infosection() {
   return (
     <>
-      <section className="w-screen mx-auto bg-sky-500 h-full lg:flex lg:flex-col md:bg-amber-800 lg:py-2 lg:mx-auto lg:gap-x-5 lg:justify-start lg:w-full lg:items-start xl:flex-row xl:justify-center xl:items-center">
+      <section className="w-full mx-auto bg-transparent h-full lg:flex lg:flex-col md:bg-amber-800 lg:py-2 lg:mx-auto lg:gap-x-5 lg:justify-start lg:w-full lg:items-start xl:flex-row xl:justify-center xl:items-center">
         <div className="mx-auto w-full flex flex-col items-center md:flex-row md:items-stretch md:justify-start md:gap-x-5">
           <div className="flex flex-col items-center justify-center w-96">
             <LogoNeu className="mx-auto p-1 w-24 h-12 lg:w-40 lg:h-16"></LogoNeu>

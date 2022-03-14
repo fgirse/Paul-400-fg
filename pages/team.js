@@ -6,7 +6,8 @@ import Image from 'next/image';
 export default function team() {
   return (
     <>
-    <section className="w-11/12 mx-auto p-4 flex flex-col items-center justify-between">
+    <body className="invisible"></body>
+    <section className="w-screen mx-auto p-4 flex flex-col items-center justify-between">
       {/*====================================== wrapper background ==================================================================================================================================*/}
       <div className="mx-auto mb-auto flex-grow bg-cover bg-[url('/illumaritim-2.png')] w-[100vw] h-[320vh] bg-no-repeat bg-center relative z-0 lg;h-[100vh]">
         {/*====================================== flex-col==============================================================================================================================*/}

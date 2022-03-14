@@ -14,7 +14,7 @@ const LayoutWrapper = ({ children }) => {
     <>
       <InfoSection/>
       <SectionContainer>
-        <div className="w-screen flex flex-col justify-between bg-slate-900">
+        <div className="w-screen bg-contain bg-transparent flex flex-col justify-between lg:bg-slate-900">
           <header className="mt-1 flex items-start justify-between p-1">
             <div>
               <Link href="/" aria-label={siteMetadata.headerTitle}>

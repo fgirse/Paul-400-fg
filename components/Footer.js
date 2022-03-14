@@ -12,10 +12,10 @@ export default function Footer() {
       <div className="mt-16 bg-amber-900 flex flex-col items-center">
       <div className='mt-12'>
           <p className="text-gray-50 text-center">Partner:</p>
-          <div className="flex flex-row jusify-center items-basleline">
+          <div className="flex flex-col justify-center items-center md:flex md:flex-row md:jusify-center md:items-baseleline">
           <LogoLeckerladen className="mb-5 w-36 h-8"></LogoLeckerladen>
           <Ganter className="inline w-36 h-8"></Ganter>
-          <Astra className="inline  w-36 h-8"></Astra>
+          <Astra className="inline mb-6  w-36 h-8"></Astra>
           </div>
           
         </div>
@@ -27,19 +27,15 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
         </div>
-        <div className="mb-2 flex space-x-2 text-sm text-slate-50 dark:text-gray-400">
+        <div className="mb-2 flex flex-col justify-center items-center md:flex space-x-2 text-xs text-slate-50 dark:text-gray-400 md:text-sm">
         <div>{`© ${new Date().getFullYear()}`}</div>
-        <div>{` • `}</div>
+        <div className='hidden md: block'>{` • `}</div>
           <p>all rights reserved</p>
-          <div className="font-sans  font-extrabold text-yellow-300">{siteMetadata.author}</div>
-          <div>{` & `}</div>
-          
-        
-          <Link href="/">{siteMetadata.title}</Link>
+          <div className="font-sans text-xs font-extrabold text-yellow-300">{siteMetadata.author}</div>
+          <div className='hidden md:block'>{` & `}</div>
+         <Link className="" href="/">{siteMetadata.title}</Link>
         </div>
-        
-        
-      </div>
+        </div>
     </footer>
   )
 }
