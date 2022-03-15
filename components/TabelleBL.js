@@ -35,7 +35,7 @@ const Table = () => {
     
     const renderHeader = () => {
     
-        let headerElement = ['Rang', 'Emblem', 'Team', 'Spiele ', 'gewonnen','verloren', 'remis', 'Tore', 'Gegentore', 'Differenz', 'Punkte']
+        let headerElement = ['R', 'E','Team','Sp', 'S','N', 'R', 'To', 'GT', 'TD', 'P']
 
         return headerElement.map((key, index) => {
             return <th className="text-xs 2xl:2xi" key={index}>{key.toUpperCase()}</th>
@@ -80,9 +80,9 @@ const Table = () => {
 
         <table className="w-full" h-full id='tabelleBL'>
             <thead>
-                <tr className="mr-1 text-white text-xl px-4 bg-yellow-600">{renderHeader()}</tr>
+                <tr className="mr-1 text-white text-sm px-4 bg-yellow-600">{renderHeader()}</tr>
             </thead>
-            <tbody className="text-white text-xl bg-gray-800 opacity-80">
+            <tbody className="text-white text-sm bg-gray-800 opacity-80">
                 {renderBody()} 
             </tbody>
         </table>

@@ -11,11 +11,11 @@ export default function Footer() {
     <footer>
       <div className="mt-16 bg-amber-900 flex flex-col items-center">
       <div className='mt-12'>
-          <p className="text-gray-50 text-center">Partner:</p>
+          <p className="mb-5 text-gray-50 text-center">Partner:</p>
           <div className="flex flex-col justify-center items-center md:flex md:flex-row md:jusify-center md:items-baseleline">
-          <LogoLeckerladen className="mb-5 w-36 h-8"></LogoLeckerladen>
           <Ganter className="inline w-36 h-8"></Ganter>
           <Astra className="inline mb-6  w-36 h-8"></Astra>
+          <LogoLeckerladen className="mb-5 w-36 h-8"></LogoLeckerladen>
           </div>
           
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
@@ -9,6 +10,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+     fontSize: {"xxs": ".50rem",
+                "xxxs": ".33rem",
+    },
       spacing: {
         '9/16': '56.25%',
       },

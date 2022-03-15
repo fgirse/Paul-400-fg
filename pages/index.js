@@ -1,3 +1,4 @@
+/* eslint-disable no-inner-declarations */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable prettier/prettier */
 import Link from '@/components/Link'
@@ -63,12 +64,18 @@ export async function getStaticProps() {
 const SLIDE_COUNT = 7;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
+
+
+
 export default function Home({ posts }) {
+
+
+    
 
 return(
 <>
 
-<section className="mt-5 mx-auto flex-grow-1 lg:border-t-4 lg:border-b-4lg:border-amber-400  md:bg-[url('/Hero.png')] md:bg-cover bg-no-repeat md:w-[100vw] md:h-[calc(100vh-12vh-16vh)]">
+<section className="mt-5 mx-auto flex-grow-1 lg:border-t-4 lg:border-b-4 lg:border-amber-400  md:bg-[url('/Hero.png')] md:bg-cover bg-no-repeat md:w-[100vw] md:h-[calc(100vh-12vh-16vh)]">
 
 </section>
   <section className="hidden lg:block lg:mx-auto lg:mt-2 lg:rounded-3xl lg:w-screen bg-slate-900 lg:h-[14vh] ">
@@ -83,9 +90,16 @@ return(
           </div>
 
 </section>
+{/*================================================ Modale6 =======================================================================================*/}
+<div className="mx-auto mt-[100vh] w-11/12 text-5xl md:hidden">
+                <Modal6 className=""></Modal6>
+</div>
+{/*================================================ Modale6 ende =====================================================================================*/}
+
+
           {/*======================================================================= SECTION A ===========================================================*/}
 
-          <section className="mx-auto mt-[90vh] w-full md:-mt-[13vh] lg:mt-[3vh]">
+          <section className="mx-auto mt-[5vh] w-full md:-mt-[13vh] lg:mt-[3vh]">
             <div className=" lg:content-stretch mx-auto  grid h-96 w-11/12 grid-cols-1 lg:grid lg:grid-cols-[1fr_2fr] lg:justify-between lg:gap-x-6">
               <div className=" h-36 w-full py-2">
                 <p className="mb-2 text-center text-3xl font-bold uppercase tracking-tight text-yellow-500 dark:text-white md:text-4xl xl:text-5xl">
@@ -104,13 +118,9 @@ return(
                   Sonntag: Ruhetag
                 </p>
               </div>
-              {/*================================================ Modale6 =======================================================================================*/}
-              <div className="mx-auto mt-12 w-11/12 text-5xl md:hidden">
-                <Modal6 className=""></Modal6>
-</div>
-              {/*================================================ Modale6 ende =======================================================================================*/}
+              
 
-              <div className="mt-9 mx-auto  bg-amber-800 shadow-2xl shadow-gray-200/50 flex w-11/12 flex-col items-center rounded-2xl border md:bg-red-900 dark:bg-gray-800 md:flex-row lg:w-11/12 ">
+              <div className="mt-9 mx-auto  bg-slate-900 shadow-2xl shadow-gray-200/50 flex w-11/12 flex-col items-center rounded-2xl border md:bg-red-900 dark:bg-gray-800 md:flex-row lg:w-11/12 ">
                 <img className="py-2 rounded-2xl" src="/portrait-mick1.png" alt="portrait" />
                 <div className="flex w-full flex-col justify-between p-4 leading-normal">
                   <h5 className="mb-3 text-3xl text-center font-sans font-bold tracking-tight text-yellow-500 dark:text-white xl:text-5xl">
@@ -130,36 +140,17 @@ return(
                   </p>
                 </div>
               </div>
+              
+
             </div>
 
-            <div className="mx-auto mt-[88vh] sm:mt-[82vh] flex w-full flex-col items-center justify-start px-12 md:absolute md:-mt-40 md:w-4/12">
-              <button
-                type="button"
-                className="text-center inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 font-sans text-xl font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 md:text-4xl lg:mb-6"
-              >
-                <a className="ui btn" href="mailto:rettungsanker-freiburg@gmx.de?Subject=Enquiry">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-</svg>
-                  SOS Rettungsanker
-                </a>
-              </button>
-              <div className=''>
-              <p className="mt-12 relative z-30 text-justify text-sm text-white">
-                Schreiben Sie uns gerne Ihre Eindrücke zu Ihrem Besuch im Rettungsanker. Am
-                wichtigsten aber: geben Sie uns Reflexion, wenn etwas nicht zu Ihrer Zufriedenheit
-                vorgefallen ist! Nur so können wir uns als Ihr Gastgeber stetig verbessern und Ihnen
-                als Gast zukünftig noch besser gerechtwerden.
-              </p>
-              </div>
-                 </div>
+          
           </section>
 
           {/*========================== ENDE SECTION A =================================================*/}
 
            <div className="mt-15 flex flex-col md:flex md:flex-row items-baseline">
-            <div className="w-5/12 z-10 absolute left-6 transform -translate-y-[86vh] md:relative md:transform md:-translate-y-10 md:w-3/12 xl:w-2/12 xl:transform: xl:-translate-y-48">
+            <div className="w-5/12 z-10 absolute left-6 transform translate-y-[20vh] md:relative md:transform md:-translate-y-10 md:w-3/12 xl:w-2/12 xl:transform: xl:-translate-y-48">
               <Image
                 src="/lighthousebw.svg"
                 
@@ -169,7 +160,7 @@ return(
                 width={473}
               />
             </div>
-            <div className="absolute left-48 w-4/12 p-2 transform -translate-y-[65vh] sm:transform sm:-translate-y-6 md:static md:py-0 md:w-8/12 md:right-16 lg:w-3/12 xl:w-3/12 float-right md:transform md:translate-y-0 xl:transforn xl:-translate-y-[5vh]">
+            <div className="absolute left-48 w-4/12 p-2 transform translate-y-[52vh] sm:transform sm:-translate-y-6 md:static md:py-0 md:w-8/12 md:right-16 lg:w-3/12 xl:w-3/12 float-right md:transform md:translate-y-0 xl:transforn xl:-translate-y-[5vh]">
               <Image
                 className=""
                 src="/Astraballons.png"
@@ -200,7 +191,7 @@ return(
           </div>
 
           {/*======================================= Section B =======================================================================*/}
-          <section className="hidden xl:-mt-48 xl:p-12">
+          <section className="hidden lg:block xl:-mt-48 xl:p-12">
             <div className="grid overflow-hidden grid-cols-1 md:grid md:grid-cols-3 grid-rows-2 gap-3">
               <div className="relative z-40 mx-auto w-10/12 md:w-11/12">
                 <Image
@@ -235,14 +226,14 @@ return(
 
           {/*======================================= Ende Section B =======================================================================*/}
 
-          <h1 className="mt-126 text-[3.99rem] headingA relative left-1 sm:text-[3.99rem] text-yellow-500 text-center md:text-8xl lg:text-[10rem] xl:-mt-[68vh]">
+          <h1 className="mt-[80vh] text-[3.99rem] headingA relative left-1 sm:text-[3.99rem] text-yellow-500 text-center md:text-8xl lg:text-[10rem] xl:-mt-[68vh]">
             Die Kneipe
           </h1>
 
           {/*========================================================== section E ===============================================================*/}
 
           <section className=" xl:mt-[12vh]">
-            <div className="container text-xs mx-auto rounded-2xl bg-slate-800 w-10/12 border border-gray-300">
+            <div className="container text-xs mx-auto rounded-2xl bg-slate-800 w-10/12 border border-gray-300 lg:h-72">
               <p className=" text-lsm font-sans text-justify lg:newspaperB lg:mt-0 text-gray-100  text-lg px-4 lg:-mb-16 lg:text-3xl lg:leading-10">
                 Gemütlich nordisches Ambiente im Herzen der Altstadt Freiburgs
                 gelegen. Orginales Waterkant-Feeling mit Astra <Astraflasche className="hidden md:inline w-20 h-16"></Astraflasche>, Flens & Co. <FlensDose className="hidden md:inline w-20 h-12"></FlensDose><br/>
@@ -314,9 +305,9 @@ return(
                   <Text>
                     <p className="mt-10 text-2xl text-center text uppercase font-bold">
                       Ganter Bier
-                    </p>                                                                                                                                                                                                                                                                                                                                         z
+                    </p>                                                                                                                                                                                                                                                                                                                                         
                     <p className="text-xl text-center">
-                      frisches köstliches Ganter-Bräu vom Fass
+                     köstliches Ganter-Bräu vom Fass
                     </p>
                   </Text>
                 </Card>
@@ -382,14 +373,15 @@ return(
           {/*========================================================== section F ende==============================================================*/}
 
           {/*========================================================== section G =================================================*/}
-          <section className="flex flex-col items-center">
-            <div>
-              <hr className="w-48 mt-12 mx-auto md:w-9/12" />
-
-              <div className="w-36 mt-6 md:mt-20 mx-auto md:w-2/12 lg:m">
+          <section className="flex flex-col justify-center items-center">
+          <div className="w-36 mt-6 md:mt-20 mx-auto md:w-2/12 lg:mx-auto">
                 <LogoNeu className="w-48 h-48 lg:w-60 lg:h-60"></LogoNeu>
                   
               </div>
+            <div>                                                            
+              <hr className="w-48 mt-12 mx-auto md:w-9/12" />
+
+              
 
               <h1 className="headingB text-white mt-2 text-[3rem] text-center lg:headingA lg:text-[6rem] lg:text-gray-600">
                 Impressum

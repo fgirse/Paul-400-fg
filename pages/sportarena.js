@@ -36,20 +36,20 @@ export default class FetchDataUser extends React.Component {
 
     return (
       <>
-        <container className="flex flex-col items-stretch min-h-screen w-11/12 mx-auto mb-auto">
+        <container className="flex flex-col items-stretch min-h-screen w-[100vw] mx-auto mb-auto">
           <div
             style={{ 'background-image': "url('/sportarena.jpg')" }}
-            className="flex-1 w-full h-[120vh] bg-cover border-t border-b border-yellow-400  bg-no-repeat"
+            className="flex-1 w-[100vw] h-[120vh] bg-cover border-t border-b border-yellow-400  bg-no-repeat"
           >
-            <p className="mt-5 headingc text-center text-white xl:text-[7rem]">
+            <p className="mt-5 text-5xl headingc text-center text-white xl:text-[7rem]">
               DIE SPORTARENA{' '}
             </p>
             {/*<DataSCFreiburg></DataSCFreiburg>*/}
             <div className="flex flex-col items-center justify-start">
-              <p className="mb-5 headingc text-4xl text-center text-white">
+              <p className="mb-16 headingc text-4xl text-center text-white">
                 Tisch reservieren?
               </p>
-              <Modal6 className="text-4xl"></Modal6>
+              <Modal6></Modal6>
             </div>
             <p className="mt-5 mx-auto text-1xl text-gray-200 text-center font-sans xl:text-2xl">
               Saison vom{' '}
@@ -72,7 +72,7 @@ export default class FetchDataUser extends React.Component {
             </p>
             :
             <div className="container mt-5 text-xs border border-yellow-500 w-full md:w-11/12 xl:w-10/12 mx-auto mb-24">
-              <TabelleBL className="text-xs"></TabelleBL>
+              <TabelleBL className="text-xxs"></TabelleBL>
             </div>
           </div>
 

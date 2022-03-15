@@ -31,7 +31,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
-       <body className="bg-[url('/hero5.png')] w-screen h-[100vh] bg-no-repeat bg-fix  bg-[length:110vw_100vh] bg-slate-900 font-sans text-blue-500 dark:bg-gray-900 dark:text-white lg:bg-red-500  mx-1 max-w-screen-2xl">
+       <body id="Hero6" className="bg-[url('/Hero6.png')] w-screen h-[100vh] bg-no-repeat bg-[length:100vw_90vh] bg-slate-900 font-sans text-blue-500 dark:bg-gray-900 dark:text-white lg:bg-red-500  mx-1 max-w-screen-2xl">
           <Main />
           <NextScript />
         </body>

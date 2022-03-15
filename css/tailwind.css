@@ -83,7 +83,7 @@
     column-rule: thin inset orange;
   }
 
-  newspaperC {
+  .newspaperC {
     columns: 66px 3;
     column-gap: 6rem;
     line-height: 0.66rem;
@@ -91,7 +91,7 @@
     font-family: 'Architects Daughter';
     column-rule: thin inset orange;
   }
-  newspaperD {
+  .newspaperD {
     columns: 66px 1;
     column-gap: 6rem;
     line-height: 0.66rem;
@@ -99,6 +99,11 @@
     font-family: 'Architects Daughter';
     column-rule: thin inset orange;
   }
+
+  .nobgimg {
+    background-image: url('../public/Hero6.png');
+    background-size:  0 ;
+}
 
 }
 

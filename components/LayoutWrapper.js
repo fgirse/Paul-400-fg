@@ -7,11 +7,13 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import SetBgImage from '../components/SetBgImg'
 import InfoSection from './Infosection'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <>
+    <SetBgImage/>
       <InfoSection/>
       <SectionContainer>
         <div className="w-screen bg-contain bg-transparent flex flex-col justify-between lg:bg-slate-900">

@@ -1,15 +1,42 @@
+/* eslint-disable no-inner-declarations */
 /* eslint-disable prettier/prettier */
 import React from "react";
 import Image from 'next/image';
 
+if (typeof document !== "undefined") {
+  // browser code
+   // The function below will change the background color
+   function deleteBackgroundImage() {
+    document.getElementById("Hero6").style.backgroundImage = "none";
 
-export default function team() {
+   }
+    document.addEventListener("DOMContentLoaded",deleteBackgroundImage());
+  }
+
+ 
+
+ 
+
+     
+
+
+
+// call the function when the whole DOM content is loaded
+//document.addEventListener("DOMContentLoaded", changeBackgroundImage());
+
+
+
+
+export default function Team() {
+ 
+
   return (
+
     <>
-    <body className="invisible"></body>
-    <section className="w-screen mx-auto p-4 flex flex-col items-center justify-between">
+    
+    <section className=" w-screen mx-auto flex flex-col items-center justify-between">
       {/*====================================== wrapper background ==================================================================================================================================*/}
-      <div className="mx-auto mb-auto flex-grow bg-cover bg-[url('/illumaritim-2.png')] w-[100vw] h-[320vh] bg-no-repeat bg-center relative z-0 lg;h-[100vh]">
+      <div className=" mx-auto mb-auto flex-grow bg-cover bg-[url('/Maritim2.png')] w-[100vw] h-[320vh] bg-no-repeat bg-center relative z-0 lg:h-[100vh]">
         {/*====================================== flex-col==============================================================================================================================*/}
         <div className="flex flex-col items-center justify-start">
           <div className=" h-[10vh] lg:h-full">
@@ -99,11 +126,20 @@ export default function team() {
               </p>
             </div>
           </div>
+          
         </section>
       </div>
       {/*====================================== wrapper background ende ==================================================================================================================================*/}
+  
     </section>
-  </>
 
+
+  
+  
+   
+  </>
+ 
+  
   )
+  
   };
