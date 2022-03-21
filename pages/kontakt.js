@@ -9,7 +9,7 @@ export default function kontakt() {
     <>
       {/* Section 1 */}
 
-      <section className=" mx-auto bg-slate-800 px-2 pt-5 md:px-0">
+      <section className=" mx-auto bg-slate-800 border-t-4 border-bg-amber-500 px-2 pt-5 md:px-0">
         <div className="container mx-auto max-w-7xl items-center rounded-2xl bg-green-100/10 px-8 xl:p-3">
           <div className="md-7/12 mx-auto mt-3 w-11/12 py-5 lg:mt-5 lg:w-3/12 xl:w-3/12 2xl:w-3/12">
             <Image

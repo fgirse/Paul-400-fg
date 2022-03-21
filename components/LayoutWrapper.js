@@ -1,22 +1,50 @@
+/* eslint-disable no-inner-declarations */
 /* eslint-disable prettier/prettier */
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/SvgLogoNeu'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
-import Footer from './Footer'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import SetBgImage from '../components/SetBgImg'
 import InfoSection from './Infosection'
-
+import ThemeSwitch from '../components/ThemeSwitch'
+import Footer from "../components/footer"
+import MobileNav from'../components/MobileNav'
 const LayoutWrapper = ({ children }) => {
+
+  if (typeof document !== "undefined") {
+    // browser code
+     // The function below will change the background color
+
+       
+     if (!window.location.href !== "htpp://localhost:3000/") {
+
+      function deleteBackgroundImage() {
+        document.getElementById("Hero6").style.backgroundImage = "url())"
+    
+       }
+        document.addEventListener("DOMContentLoaded",deleteBackgroundImage());
+      }
+
+     }
+    
+
+     
+  
+   
+  
+   
+  
+       
+  
+  
+  
+  // call the function when the whole DOM content is loaded
+  //document.addEventListener("DOMContentLoaded", changeBackgroundImage());
   return (
     <>
-    <SetBgImage/>
       <InfoSection/>
       <SectionContainer>
-        <div className="w-screen bg-contain bg-transparent flex flex-col justify-between lg:bg-slate-900">
+        <div className=" w-screen bg-contain bg-transparent flex flex-col justify-between lg:bg-slate-900">
           <header className="mt-1 flex items-start justify-between p-1">
             <div>
               <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -35,7 +63,7 @@ const LayoutWrapper = ({ children }) => {
               </Link>
             </div>
             <div className="flex flex-wrap items-end text-base leading-5">
-              <div className="hidden sm:block">
+              <div className="hidden lg:block">
                 {headerNavLinks.map((link) => (
                   <Link
                     key={link.title}

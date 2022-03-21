@@ -1,0 +1,17 @@
+{
+	"users": [{
+			"userId": 1,
+			"userName": "Mustermann",
+			"password": "7654321",
+			"timeStamp": "dd-MMM-yyyy HH:mm:ss",
+			"emailAddress": "max.mustermann@gmx.de"
+		},
+		{
+			"userId": 2,
+			"userName": "fgirse",
+			"password": "1234567",
+			"timeStamp": "dd-MMM-yyyy HH:mm:ss",
+			"emailAddress": "fgirse@bluewin.ch"
+		}
+	]
+}

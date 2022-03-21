@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-inner-declarations */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable prettier/prettier */
@@ -18,9 +19,11 @@ import SCLogo from "../components/icons/svg/SCLogo";
 import FlensDose from '../components/icons/svg/SVGFlensdose';
 import LogoNeu from '../components/icons/svg/SvgLogoNeu'
 import Image from "next/image";
+import Modale6 from '../components/Modal6'
 import sketchy from "theme-ui-sketchy-preset";
 import Slider2 from "../components/Slider/Swiper.js";
 import NewsletterForm from '@/components/NewsletterForm'
+import SetBgImage from '../components/SetBgImg'
 
 import {
   jsx,
@@ -64,12 +67,15 @@ export async function getStaticProps() {
 const SLIDE_COUNT = 7;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
+<SetBgImage/>
+
+
 
 
 
 export default function Home({ posts }) {
 
-
+  
     
 
 return(
@@ -81,8 +87,8 @@ return(
   <section className="hidden lg:block lg:mx-auto lg:mt-2 lg:rounded-3xl lg:w-screen bg-slate-900 lg:h-[14vh] ">
           <div className="grid grid-cols-1 md:grid md:grid-cols-[7fr_6fr]  items-center justify-center">
                 <div className="">
-                        <h1 className=" ml-4 headingB text--600 lg:text-base xl:text-1xl px-4 2xl:text-[3.33rem] font-black">
-                          Dein Treffpunkt in Freiburg!</h1>
+                        <h1 className=" ml-4 headingB text--600 lg:text-base xl:text-1xl px-4 2xl:leading-14 xl:text-[6.33rem] font-black transform -rotate-3  -translate-y-16">
+                          Dein Treffpunkt in Freiburg !!!</h1>
                 </div>
                 <div className="">
                 <Skyline width="100%" height="8vh" />
@@ -233,11 +239,11 @@ return(
           {/*========================================================== section E ===============================================================*/}
 
           <section className=" xl:mt-[12vh]">
-            <div className="container text-xs mx-auto rounded-2xl bg-slate-800 w-10/12 border border-gray-300 lg:h-72">
+            <div className="container text-xs mx-auto rounded-2xl bg-slate-800 w-10/12  lg:p-8  lg:h-[55vh]">
               <p className=" text-lsm font-sans text-justify lg:newspaperB lg:mt-0 text-gray-100  text-lg px-4 lg:-mb-16 lg:text-3xl lg:leading-10">
                 Gemütlich nordisches Ambiente im Herzen der Altstadt Freiburgs
-                gelegen. Orginales Waterkant-Feeling mit Astra <Astraflasche className="hidden md:inline w-20 h-16"></Astraflasche>, Flens & Co. <FlensDose className="hidden md:inline w-20 h-12"></FlensDose><br/>
-                Jeden Samstag Bundesliga Saison Spieltag des <SCLogo className="inline alinge-middle h-12 w-28"/> Live in unserer <Link href="/sportareNa">
+                gelegen. Orginales Waterkant-Feeling mit Astra <Astraflasche className="hidden md:inline w-20 h-16"></Astraflasche>, Flens & Co. <FlensDose className="hidden md:inline w-20 h-12"></FlensDose><br/><br/>
+                Im Verlaufe der aktuellen Bundesligasaison jeden Samstag ab 15 Uhr und Spieltag des <SCLogo className="inline alinge-middle h-12 w-28"/> TY Live Berichterstattung  in unserer <Link href="/sportareNa">
                   <a className="text-lg text-yellow-600 hover:text-amber-300 hover:border-b-4 hover:border-slate-400 lg:text-4xl">
                     Sportarena.
                   </a>
@@ -246,6 +252,9 @@ return(
                 Top Spielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser
                 Booking-Tool zu empfehlen !!!
               </p>
+            </div>
+            <div className='mt-'>
+              <Modale6/>>
             </div>
 
             <ThemeProvider theme={theme}>

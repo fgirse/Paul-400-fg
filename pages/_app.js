@@ -1,22 +1,19 @@
-import '@/css/tailwind.css'
-import '@/css/prism.css'
-import '../components/Slider/css/swiper.css'
-import '@fontsource/inter/variable-full.css'
-
+/* eslint-disable prettier/prettier */
+//import 'normalize.css/normalize.css';
+import '../css/tailwind.css'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
-
-import siteMetadata from '@/data/siteMetadata'
-import Analytics from '@/components/analytics'
-import LayoutWrapper from '@/components/LayoutWrapper'
-import { ClientReload } from '@/components/ClientReload'
-
+import { SessionProvider } from "next-auth/react"
+import Analytics from '../components/analytics'
+import LayoutWrapper from '../components/LayoutWrapper'
+import { ClientReload } from '../components/ClientReload'
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, session }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+    <SessionProvider session = {session}>
+    <ThemeProvider attribute="class">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
@@ -26,5 +23,6 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </LayoutWrapper>
     </ThemeProvider>
+    </SessionProvider>
   )
 }

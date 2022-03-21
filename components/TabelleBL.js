@@ -35,10 +35,10 @@ const Table = () => {
     
     const renderHeader = () => {
     
-        let headerElement = ['R', 'E','Team','Sp', 'S','N', 'R', 'To', 'GT', 'TD', 'P']
+        let headerElement = ['Rang', '','Team','Spiele', 'S','N', 'R', 'T', 'G', 'D', 'P']
 
         return headerElement.map((key, index) => {
-            return <th className="text-xs 2xl:2xi" key={index}>{key.toUpperCase()}</th>
+            return <th className="text-left text-xxs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl" key={index}>{key.toUpperCase()}</th>
         })
     }
 
@@ -46,7 +46,7 @@ const Table = () => {
     const renderBody = () => {
         return tabelleBL && tabelleBL.map(({ position, emblem, team, playedGames, won, lost, draw, goalsFor,goalsAgainst, goalDifference, points }) => {
             return (
-                <tr className="mb-auto text-gray-100 px-4 bg-gray-800" key={position}>
+                <tr className="mb-auto text-gray-100 bg-gray-800 text-xxs md:text-sm lg:text-lg xl:text-xl 2xl:text-5xl" key={position}>
                     <td>{position}</td>
                     <td><img src={team.crestUrl} height="18" width="18" alt="Eblem"/></td>                    <td>{team.name}</td>
                     <td>{playedGames}</td>

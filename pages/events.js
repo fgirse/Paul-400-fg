@@ -3,15 +3,14 @@ import Image from 'next/image'
 import Modal5 from '../components/Modal5.js'
 import * as Icons from "heroicons-react";
 
-import Saxophone from '../components/icons/svg/SVGSaxophoneWeiss'
 
 export default function event() {
   return (
     <>
-      <section className="mx-auto mb-8 px-2 py-3 w-[100vw] bg-slate-700 md:px-0 rounded-2xl">
+      <section className="mx-auto mb-8 px-2 py-3 border-t-4 border-amber-300 w-[100vw] h-[calc(100vh-20vh)] bg-slate-800 md:px-0 ">
         
         <div className="container -mt-3 rounded-2xl h-[100vh] items-center max-w-7xl px-8 mx-auto lg:mt-0 xl:px-5">
-          <p className="mt-16 text-6xl headingB py-4 text-center text-gray-100 sm:text-6xl md:text-5xl lg:mt-5 lg:text-8xl lg:py-8 ">
+          <p className="mt-1 text-6xl headingB py-4 text-center text-gray-100 sm:text-6xl md:text-5xl lg:mt-5 lg:text-8xl lg:py-8 ">
             Dein Event
           </p>
           <div className="mx-auto py-2  w-10/12 sm:w-5/12 md:w-2/12  lg:w-4/12 lg:-mt-8 xl:w-3/12">

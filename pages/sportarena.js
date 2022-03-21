@@ -49,7 +49,10 @@ export default class FetchDataUser extends React.Component {
               <p className="mb-16 headingc text-4xl text-center text-white">
                 Tisch reservieren?
               </p>
-              <Modal6></Modal6>
+              <div className="mt-mt-3   2xl:mt-24">
+              <Modal6 className=""></Modal6>
+              </div>
+              
             </div>
             <p className="mt-5 mx-auto text-1xl text-gray-200 text-center font-sans xl:text-2xl">
               Saison vom{' '}
@@ -61,7 +64,7 @@ export default class FetchDataUser extends React.Component {
                 {this.state.tabelle.endDate}
               </span>
             </p>
-            <p className="mx-auto text-4xl text-gray-200 text-center font-sans xxl:text-4xl">
+            <p className="mx-auto text-4xl text-gray-200 text-center font-sans 2xl:text-6xl">
               Die Bundesliga
             </p>
             <p className="mx-auto text-2xl text-gray-200 text-center font-sans xl:text-2xl">
